@@ -1,0 +1,50 @@
+@import '../../assets/styles/index.less';
+
+.login-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  background-image: url('./login-bg.svg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+
+  .login-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: -10px;
+
+    .login-logo {
+      width: 42px;
+      height: 42px;
+      margin-right: 15px;
+    }
+  }
+
+  .login-form {
+    flex: 1;
+    width: 368px;
+    margin: 50px auto 0;
+
+    .login-username,
+    .login-password {
+      height: 40px;
+      line-height: 24px;
+      padding: 8px 11px;
+      width: 100%;
+
+      .ant-input-prefix .anticon {
+        color: @primary-color;
+      }
+    }
+  }
+
+  .login-submit {
+    width: 100%;
+    height: 40px;
+  }
+}

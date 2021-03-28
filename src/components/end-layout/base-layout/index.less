@@ -1,0 +1,30 @@
+@import '../../../assets/styles/index.less';
+
+.cf-end-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  .cf-end-content {
+    // height: calc(100vh - @header-bg);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+
+    .cf-end-inner {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 100%;
+      box-sizing: border-box;
+      overflow-y: auto;
+
+      .cf-end-child {
+        position: relative;
+        flex: 1;
+      }
+    }
+  }
+}
